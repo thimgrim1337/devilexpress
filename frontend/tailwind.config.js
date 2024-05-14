@@ -25,5 +25,18 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: '#ED1C24',
+          secondary: '#3DA5D9',
+          accent: '#FED766',
+          neutral: '#001524',
+          base: '#F4F3EE',
+        },
+      },
+    ],
+  },
 };
