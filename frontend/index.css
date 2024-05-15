@@ -32,17 +32,6 @@ textarea {
   transform: rotateY(180deg);
 }
 
-/* TRAILERS */
-.description.active {
-  height: 170px;
-}
-
-.description {
-  height: 0;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
 /* SLIDER */
 
 #slider-track {
@@ -81,3 +70,11 @@ textarea {
     transform: translateX(calc(-208px * 7));
   }
 }
+
+/* .subheader::before {
+  content: '';
+  width: 40px;
+  height: 8px;
+  display: block;
+  background-color: red;
+} */

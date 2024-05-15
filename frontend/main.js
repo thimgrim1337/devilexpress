@@ -1,27 +1,3 @@
-const list = document.querySelector('#trailers').children;
-
-[...list].forEach((listItem) =>
-  listItem.addEventListener('click', () => {
-    closeDescriptions(list);
-    openDescription(listItem);
-  })
-);
-
-function openDescription(listItem) {
-  const description = listItem.querySelector('.description');
-  listItem.firstElementChild.className =
-    'bg-devil-red text-devil-white font-bold p-4 rounded  shadow-sm shadow-red-900 flex gap-5';
-  description.classList.add('active');
-}
-
-function closeDescriptions(list) {
-  [...list].forEach((listItem) => {
-    listItem.firstElementChild.className =
-      'bg-devil-white text-devil-dark font-bold p-4 rounded  shadow-sm  flex gap-5 ';
-    listItem.querySelector('.description').classList.remove('active');
-  });
-}
-
 function animateCounter(counter, startValue, endValue, duration) {
   let startTimestamp = null;
   const step = (timestamp) => {
