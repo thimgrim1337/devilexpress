@@ -70,11 +70,3 @@ textarea {
     transform: translateX(calc(-208px * 7));
   }
 }
-
-/* .subheader::before {
-  content: '';
-  width: 40px;
-  height: 8px;
-  display: block;
-  background-color: red;
-} */
