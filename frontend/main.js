@@ -19,7 +19,6 @@ const kmCounter = document.querySelector('.kmCounter');
 let counterStart = false;
 
 let observer = new IntersectionObserver((entries) => {
-  console.log(entries);
   entries.forEach((entry) => {
     if (entry.isIntersecting && !counterStart) {
       counterStart = !counterStart;
