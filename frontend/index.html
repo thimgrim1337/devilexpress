@@ -69,7 +69,7 @@
               <span class="text-devil-red">Piekielnie</span> szybkie usługi
               transportowe
             </h1>
-            <p class="mb-5">Transport krajowy i międzynarodowy</p>
+            <p class="mb-5">Z nami Twój ładunek jest bezpieczny. Najwyższej jakości usługi transportu krajowego i międzynarodowego. </p>
             <button class="btn btn-primary text-devil-white">
               Skorzystaj z naszych usług
             </button>
@@ -328,19 +328,21 @@
       <section class="hero min-h-screen bg-testimonial-bg">
         <div class="hero-overlay bg-opacity-70"></div>
         <div
-          class="container min-h-screen max-w-screen-xl grid place-content-center place-items-center gap-5 py-20 md:px-10 lg:px-0"
+          class="container min-h-screen max-w-screen-xl grid gap-5 content-center   py-20 md:px-10 lg:px-0"
         >
-          <div class="max-w-xl mb-5 text-base-100 text-center">
-            <h2 class="mb-2 text-2xl md:text-3xl font-bold">
+          <div class="max-w-4xl mb-5 text-base-100  ">
+            <p class="md:text-xl before:block before:w-7 before:h-2 before:bg-devil-red">
               Transport krajowy i zagraniczny
-            </h2>
-            <p class="md:text-xl">
+            </p>
+            <h2 class="mb-2 text-2xl md:text-3xl font-bold">
               Specjalizujemy się w szybkich i bezpiecznych przewozach różnego
               rodzaju towarów. Dokładamy wszelkich starań, aby każde powierzone
               nam zlecenie było zrealizowane w wyznaczonym terminie
-            </p>
+              
+            </h2>
+  
           </div>
-          <div class="flex flex-col gap-5 md:flex-row">
+          <div class="flex flex-col gap-5 md:flex-row place-self-center">
             <div class="card  bg-base-100 shadow-xl">
               <figure class="text-secondary bg-transparent p-5"><i class="fa-solid fa-users text-4xl"></i></figure>
               <div class="card-body place-items-center">
@@ -359,15 +361,16 @@
               <figure class="text-primary bg-transparent p-5"><i class="fa-solid fa-truck-fast text-4xl"></i></figure>
               <div class="card-body place-items-center">
                 <h2 class="card-title text-5xl"><span class="kmCounter">16</span> mln+</h2>
-                <p class="">Zadowolonych klientów</p>
+                <p class="">Przejechanych km</p>
               </div>
             </div>
+     
           </div>
-
-
-          <button class="btn btn-primary text-devil-white mt-2">
-            Skontakuj się z nami
+          <button class="btn btn-primary text-devil-white mt-2 place-self-center ">
+            <a href="#contact">Skontakuj się z nami</a>
           </button>
+
+
         </div>
       </section>
       <section class="hero bg-polygon-bg bg-devil-dark " id="aboutus">
@@ -564,9 +567,53 @@
           ></iframe>
         </div>
       </section>
-      <section></section>
+      <section class="hero bg-map-bg bg-cover" id="contact">
+        <div class="hero-overlay bg-opacity-50"></div>
+        <div class="container min-h-screen max-w-screen-xl place-content-center py-20 md:px-10 lg:px-0">
+          <div class="max-w-xl text-base-100 mb-5 ">
+            <p
+            class="md:text-xl before:block before:w-7 before:h-2 before:bg-devil-red "
+          >
+            Skontakuj się z nami
+          </p>
+            <h2 class="mb-2 text-2xl md:text-3xl font-bold">
+              Potrzebujesz wyceny <span class="text-primary text-4xl">?</span> Chętnie zajmiemy się Twoją sprawą. Napisz do nas a odpowiemy najszybciej jak to możliwe.
+            </h2>
+
+          </div>
+          <div class="flex flex-col md:flex-row ">
+            <div class="flex-grow">
+            <form action="#" method="post" class="grid gap-2">
+                <fieldset>
+                  <label class="input input-bordered flex items-center gap-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>
+                    <input type="text" class="grow  " placeholder="Imię" required autocomplete="false" />
+                  </label>
+                </fieldset>
+                <fieldset>
+                  <label class="input input-bordered flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" /><path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" /></svg>
+                    <input type="email" class="grow" placeholder="Email" required autocomplete="false" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
+                  </label>
+                </fieldset>
+                <textarea class="textarea textarea-bordered resize-none w-full h-52" placeholder="Twoja wiadomość..." required autocomplete="false"></textarea>
+                <button type="submit" class="btn w-full btn-primary uppercase text-xl text-base-100">wyślij</button>
+            </form>
+          </div>
+            <div class="text-base-100 flex-grow grid content-start place-content-center p-10">
+              <img src="logo.png" alt="" class="mb-2 w-40">
+              <h4 class="font-bold text-lg">DEVIL Express Sp. z o.o.</h4>
+              <p>09-442 Stróżewko 2/1</p>
+              <p>NIP: 7743286397</p>
+              <p>KRS: 0001094441</p>
+              <p>+48 733 533 971</p>
+              <p>biuro@devilexpress.eu</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer footer-center p-10 bg-neutral text-base-100 rounded">
+    <footer class="footer footer-center p-10  rounded">
       <nav class="grid grid-flow-col gap-4">
         <a class="link link-hover" href="#home">Home</a>
         <a class="link link-hover" href="#ofert">Oferta</a>

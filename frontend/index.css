@@ -6,10 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-textarea {
-  resize: none;
-}
-
 /* CARD  */
 
 .card-inner {
@@ -73,4 +69,16 @@ textarea {
   100% {
     transform: translateX(calc(-208px * 7));
   }
+}
+
+/* Form */
+
+fieldset:invalid > label,
+textarea:invalid {
+  border: 4px solid #ed1c24;
+}
+
+fieldset:valid > label,
+textarea:valid {
+  border: 4px solid green;
 }
