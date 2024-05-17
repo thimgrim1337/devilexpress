@@ -30,3 +30,11 @@ let observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(kmCounter);
+
+// Hamburger menu
+const hambuger = document.querySelector('#hamburger');
+const menu = document.querySelector('#menu');
+
+hambuger.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});

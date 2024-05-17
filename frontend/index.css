@@ -82,3 +82,10 @@ fieldset:valid > label,
 textarea:valid {
   border: 4px solid green;
 }
+
+/* Menu */
+
+#menu.active {
+  display: block;
+  top: 4rem;
+}

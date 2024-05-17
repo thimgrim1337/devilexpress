@@ -14,7 +14,7 @@
     <title>DEVIL Express Usługi transportowe</title>
   </head>
   <body>
-    <header id="header">
+    <header id="header relative">
       <div class="fixed top-0 w-full bg-base-100 z-50 shadow">
         <div class="container max-w-screen-xl">
           <div class="navbar justify-end border-b-2 hidden md:flex">
@@ -27,32 +27,26 @@
             </p>
           </div>
           <nav class="navbar">
-            <div class="flex-none md:hidden">
-              <button class="btn btn-square btn-ghost">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </button>
-            </div>
+            <label  class="btn btn-circle swap swap-rotate md:hidden">
+  
+              <!-- this hidden checkbox controls the state -->
+              <input type="checkbox" id="hamburger"/>
+              
+              <!-- hamburger icon -->
+              <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+              
+              <!-- close icon -->
+              <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+              
+            </label>
             <div class="flex-1 md:justify-between justify-end">
               <a href="" class="btn btn-ghost text-xl"
                 ><img src="logo.png" alt="" class="w-20"
               /></a>
             </div>
-            <div class="hidden md:block">
-              <ul class="menu menu-horizontal px-1">
-                <li><a href="#header">Home</a></li>
+            <div id="menu" class=" absolute w-full left-0 -top-40 transition-all  md:static md:w-auto md:block">
+              <ul class="menu md:menu-horizontal px-1 bg-base-200 w-full place-items-center md:bg-transparent">
+                <li ><a href="#header">Home</a></li>
                 <li><a href="#ofert">Oferta</a></li>
                 <li><a href="#aboutus">O nas</a></li>
                 <li><a href="#contact">Kontakt</a></li>
