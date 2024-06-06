@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./index.html', 'pages/oferta.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     container: {
       center: true,
@@ -19,10 +19,10 @@ export default {
         'devil-white': '#F4F3EE',
       },
       backgroundImage: {
-        'hero-bg': "url('/img/hero-bg.png')",
-        'polygon-bg': "url('img/polygon-2.svg')",
-        'testimonial-bg': "url('img/photo-2.png')",
-        'map-bg': "url('img/map.svg')",
+        'hero-bg': "url('/assets/img/hero-bg.png')",
+        'polygon-bg': "url('/assets/img/polygon-2.svg')",
+        'testimonial-bg': "url('/assets/img/photo-2.png')",
+        'map-bg': "url('/assets/img/map.svg')",
       },
     },
   },
