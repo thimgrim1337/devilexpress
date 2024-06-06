@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +16,7 @@
     <title>DEVIL Express usługi transportu krajowego i międzynarodowego.</title>
     
   </head>
-  <body>
+  <body class="font-lato">
     <header id="header relative">
       <div class="fixed top-0 w-full bg-base-100 z-50 shadow">
         <div class="container max-w-screen-xl">
@@ -35,10 +36,10 @@
               <input type="checkbox" id="hamburger"/>
               
               <!-- hamburger icon -->
-              <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+              <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
               
               <!-- close icon -->
-              <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+              <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
               
             </label>
             <div class="flex-1 md:justify-between justify-end">
@@ -57,15 +58,15 @@
           </nav>
         </div>
       </div>
-      <section class="hero min-h-screen bg-hero-bg">
+      <section class="hero lg:justify-items-start  min-h-screen bg-hero-bg">
         <div class="hero-overlay bg-opacity-70"></div>
-        <div class="hero-content text-center text-devil-white">
-          <div class="max-w-md">
-            <h1 class="mb-2 text-3xl md:text-6xl font-bold uppercase">
+        <div class="hero-content text-center lg:text-left max-w-screen-xl lg:w-full lg:m-auto lg:justify-start  text-devil-white">
+          <div class="max-w-xl">
+            <h1 class="mb-2 text-3xl md:text-6xl font-bold uppercase font-cities">
               <span class="text-devil-red">Piekielnie</span> szybkie usługi
               transportowe
             </h1>
-            <p class="mb-5">Z nami Twój ładunek jest bezpieczny. Najwyższej jakości usługi transportu krajowego i międzynarodowego. </p>
+            <p class="mb-5 md:text-xl">Z nami Twój ładunek jest bezpieczny. Najwyższej jakości usługi transportu krajowego i międzynarodowego.</p>
             <button class="btn btn-primary text-devil-white">
               Skorzystaj z naszych usług
             </button>
@@ -110,14 +111,15 @@
                 <div class="card-back">
                   <div class="card w-full md:w-96 h-full bg-base-100 shadow-xl">
                     <p class="font-extrabold pt-3 pl-5 text-devil-red">01</p>
-                    <div class="card-body">
-                      <h3 class="card-title justify-center">Transport stali</h3>
-                      <p class="text-center leading-4">
+                    <div class="flex flex-col gap-1 p-5 md:p-7 h-full">
+                      <h3 class="card-title justify-center ">Transport stali</h3>
+                      <p class="text-center  flex-grow leading-5 md:leading-6  ">
                         Specjalizujemy się w transporcie stali walcowanej i w
                         kręgach, a także stalowych blach, rur, prętów
                         zbrojeniowych, tulei, kształtowników i taśm, zapewniając
                         wysokie standardy bezpieczeństwa.
                       </p>
+                      <a href="#" class="link-primary text-right ">Dowiedz się więcej <i class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                   </div>
                 </div>
@@ -141,14 +143,16 @@
                 <div class="card-back">
                   <div class="card w-full md:w-96 h-full bg-base-100 shadow-xl">
                     <p class="font-extrabold pt-3 pl-5 text-devil-blue">02</p>
-                    <div class="card-body">
-                      <h3 class="card-title justify-center">Transport ADR</h3>
-                      <p class="text-center leading-4">
+                    <div class="flex flex-col gap-1 p-5 md:p-7 h-full ">
+                      <h3 class="card-title justify-center ">Transport ADR</h3>
+                      <p class="text-center flex-grow leading-5 md:leading-6 ">
                         Nasi wykwalifikowani kierowcy doskonale znają zasady
                         przewożenia ładunków niebezpiecznych ADR. Posiadają
                         wszystkie niezbędne uprawnienia, aby transport odbywał
                         się bezpiecznie i z zachowaniem panujących zasad.
                       </p>
+                      <a href="#" class="link-primary text-right ">Dowiedz się więcej <i class="fa-solid fa-arrow-right-long"></i></a>
+                      
                     </div>
                   </div>
                 </div>
@@ -174,17 +178,19 @@
                 <div class="card-back">
                   <div class="card w-full md:w-96 h-full bg-base-100 shadow-xl">
                     <p class="font-extrabold pt-3 pl-5 text-devil-yellow">03</p>
-                    <div class="card-body">
-                      <h3 class="card-title justify-center">
+                    <div class="flex flex-col gap-1 p-5 md:p-7 h-full ">
+                      <h3 class="card-title justify-center ">
                         Transport odpadów
                       </h3>
-                      <p class="text-center leading-4">
+                      <p class="text-center flex-grow leading-5 md:leading-6 ">
                         Transport odpadów oferowany przez naszą firmę jest
                         przeprowadzany w zgodzie z ochroną środowiska
                         naturalnego. Odpady przewozimy bezpośrednio z miejsca
                         wyznaczonego przez klienta do miejsca ich składowania
                         lub przetwarzania.
                       </p>
+                      <a href="#" class="link-primary text-right ">Dowiedz się więcej <i class="fa-solid fa-arrow-right-long"></i></a>
+
                     </div>
                   </div>
                 </div>
@@ -210,7 +216,23 @@
           </div>
           <div class="flex flex-col md:flex-row">
             <div class="self-center md:order-3 flex-1 rounded-box">
-              <img src="img/photo-1.png" alt="" class="w-full" />
+              <div class="h-96 carousel carousel-vertical rounded-box w-full">
+                <div class="carousel-item h-full" id="image1">
+                  <img src="img/side.png" alt="1" />
+                </div> 
+                <div class="carousel-item h-full" id="image2">
+                  <img src="img/side.png" alt="2" />
+                </div> 
+                <div class="carousel-item h-full" id="image3" >
+                  <img src="img/side.png" alt="3" />
+                </div> 
+                <div class="carousel-item h-full" id="image3" >
+                  <img src="img/side.png" alt="4" />
+                </div> 
+                <div class="carousel-item h-full" id="image3" >
+                  <img src="img/side.png" alt="5" />
+                </div> 
+              </div>
             </div>
             <div
               class="divider divider-vertical md:divider-horizontal md:order-2"
@@ -227,9 +249,11 @@
                     class="fa-solid fa-right-to-bracket rotate-180 text-secondary"
                   ></i>
                   Naczepy typu standard
+                  
                 </div>
                 <div class="collapse-content">
                   <p>
+                  
                     Naczepy typu standard służą do przewożenia w zasadzie
                     każdego rodzaju towaru. Powierzchnia ładunkowa pozwala na
                     przewóz zawartości luzem, ale też zapakowanej w opakowania

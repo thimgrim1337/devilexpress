@@ -38,3 +38,18 @@ const menu = document.querySelector('#menu');
 hambuger.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
+
+// Slider
+
+const collapseItems = document.querySelectorAll('.collapse');
+const carousel = document.querySelector('.carousel');
+
+collapseItems.forEach((collapseItem, index) =>
+  collapseItem.addEventListener('click', () => {
+    const imgNumber = carousel.children.length - 1;
+
+    carousel.scrollTo({
+      top: (carousel.scrollTopMax / imgNumber) * index,
+    });
+  })
+);
