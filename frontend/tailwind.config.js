@@ -21,7 +21,7 @@ export default {
       backgroundImage: {
         'hero-bg': "url('/assets/img/hero-bg.png')",
         'polygon-bg': "url('/assets/img/polygon-2.svg')",
-        'testimonial-bg': "url('/assets/img/photo-2.png')",
+        'testimonial-bg': "url('/assets/img/photo-1.png')",
         'map-bg': "url('/assets/img/map.svg')",
       },
     },

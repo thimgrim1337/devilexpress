@@ -17,7 +17,7 @@
     
   </head>
   <body class="font-lato">
-    <header id="header">
+    <header id="header" >
       <div class="fixed top-0 w-full bg-base-100 z-50 shadow">
         <div class="container max-w-screen-xl">
           <div class="navbar justify-end border-b-2 hidden md:flex">
@@ -58,27 +58,57 @@
           </nav>
         </div>
       </div>
-      <section class="hero lg:justify-items-start  min-h-screen bg-hero-bg">
-        <div class="hero-overlay bg-opacity-70"></div>
-        <div class="hero-content text-center lg:text-left max-w-screen-xl lg:w-full lg:m-auto lg:justify-start  text-devil-white">
-          <div class="max-w-xl">
-            <h1 class="mb-2 text-3xl md:text-6xl font-bold uppercase font-cities">
-              <span class="text-devil-red">Piekielnie</span> szybkie usługi
-              transportowe
-            </h1>
-            <p class="mb-5 md:text-xl">Z nami Twój ładunek jest bezpieczny. Najwyższej jakości usługi transportu krajowego i międzynarodowego.</p>
-            <button class="btn btn-primary text-devil-white">
-              Skorzystaj z naszych usług
-            </button>
+
+    </header>
+    <main>
+      <section class="relative">
+        <div class="relative">
+          <div class="bg-hero-bg w-full h-full bg-cover min-h-screen bg-center lg:bg-left"></div>
+          <div class=" absolute top-0 bg-devil-dark w-full h-full opacity-50"></div>
+        </div>
+        <div class="absolute top-0 w-full h-full lg:bg-devil-white grid place-content-center lg:place-content-stretch lg:place-items-center text-center lg:text-left shadow-xl lg:clip-hero " >
+          <div class="container max-w-screen-xl">
+            <div class="max-w-xl text-devil-white lg:text-devil-dark">
+              <h1 class="lg:mt-32 mb-2 text-3xl md:text-6xl font-bold uppercase font-cities">
+                <span class="text-devil-red">Piekielnie</span> szybkie usługi
+                transportowe
+              </h1>
+              <p class="mb-5 md:text-xl">Z nami Twój ładunek jest bezpieczny. Najwyższej jakości usługi transportu krajowego i międzynarodowego.</p>
+              <button class="btn btn-primary text-devil-white">
+                <a href="pages/kontakt.html">Skorzystaj z naszych usług</a> 
+              </button>
+            </div>
           </div>
         </div>
       </section>
-    </header>
-    <main>
+
+
+
+
+      <!-- <section class="hero bg-hero-bg ">
+        <div class="hero-overlay bg-devil-dark bg-opacity-70"></div>
+        <div class="min-h-screen max-w-screen-xl w-3/4 h-screen place-self-start  ">
+          <div class="container w-full h-full  bg-devil-white grid place-content-center shadow-xl" style="clip-path: polygon(0 0, 54% 0, 100% 100%, 0 100%);">
+            <div class="max-w-xl  ">
+              <h1 class="mb-2 text-3xl md:text-6xl font-bold uppercase font-cities">
+                <span class="text-devil-red">Piekielnie</span> szybkie usługi
+                transportowe
+              </h1>
+              <p class="mb-5 md:text-xl">Z nami Twój ładunek jest bezpieczny. Najwyższej jakości usługi transportu krajowego i międzynarodowego.</p>
+              <button class="btn btn-primary text-devil-white">
+                Skorzystaj z naszych usług
+              </button>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+
+
       <section class="hero bg-polygon-bg bg-devil-dark" id="ofert">
         <div class="hero-overlay bg-opacity-60"></div>
         <div
-          class="container min-h-screen max-w-screen-xl place-content-center py-20 md:px-10 lg:px-0"
+          class="container min-h-screen max-w-screen-xl place-content-center py-20 md:px-10 lg:px-"
         >
           <div class="max-w-xl text-base-100 mb-5">
             <p
@@ -215,22 +245,24 @@
             </h2>
           </div>
           <div class="flex flex-col md:flex-row">
-            <div class="self-center md:order-3 flex-1 rounded-box">
+
+            <div class="relative self-center md:order-3 flex-1 rounded-box">
+
               <div class="h-96 carousel carousel-vertical rounded-box w-full">
                 <div class="carousel-item h-full" id="image1">
-                  <img src="assets/img/side.png" alt="1" />
+                  <img src="assets/img/trailer-tautliner.png" alt="1" class="max-w-full w-full "  />
                 </div> 
-                <div class="carousel-item h-full" id="image2">
-                  <img src="assets/img/side.png" alt="2" />
+                <div class="carousel-item h-full " id="image2">
+                  <img src="assets/img/trailer-mulda.jpg" alt="2" class="max-w-full w-full " />
                 </div> 
-                <div class="carousel-item h-full" id="image3" >
-                  <img src="assets/img/side.png" alt="3" />
+                <div class="carousel-item h-full  " id="image3" >
+                  <img src="assets/img/trailer-mega.jpg" alt="3" class="max-w-full w-full " />
                 </div> 
-                <div class="carousel-item h-full" id="image3" >
-                  <img src="assets/img/side.png" alt="4" />
+                <div class="carousel-item h-full " id="image3" >
+                  <img src="assets/img/trailer-tautliner.png" alt="4" class="max-w-full w-full " />
                 </div> 
-                <div class="carousel-item h-full" id="image3" >
-                  <img src="assets/img/side.png" alt="5" />
+                <div class="carousel-item h-full " id="image3" >
+                  <img src="assets/img/trailer-mulda.jpg" alt="5" class="max-w-full w-full " />
                 </div> 
               </div>
             </div>
@@ -345,12 +377,12 @@
           </div>
         </div>
       </section>
-      <section class="hero min-h-screen bg-testimonial-bg">
+      <section class="hero  bg-testimonial-bg bg-fixed">
         <div class="hero-overlay bg-opacity-70"></div>
         <div
-          class="container min-h-screen max-w-screen-xl grid gap-5 content-center   py-20 md:px-10 lg:px-0"
+          class="container  max-w-screen-xl grid gap-5 content-center   py-20 md:px-10 lg:px-0"
         >
-          <div class="max-w-4xl mb-5 text-base-100  ">
+          <div class="max-w-4xl mb-5 text-base-100 ">
             <p class="md:text-xl before:block before:w-7 before:h-2 before:bg-devil-red">
               Transport krajowy i zagraniczny
             </p>
@@ -402,7 +434,7 @@
             class="join join-vertical md:join-horizontal bg-base-100 shadow w-full p-10 gap-5"
           >
             <div class="join-item grid lg:place-content-center">
-              <img src="/assets/img/photo-3.png" alt="" />
+              <img src="/assets/img/photo-2.png" class="" alt="" />
             </div>
             <div
               class="max-w-xl bg-base-100 join-item lg:place-content-center lg:pl-10"
@@ -431,11 +463,18 @@
                   Państwa oczekiwania w zakresie transportu krajowego i
                   międzynarodowego.
                 </p>
+                <div class="flex lg:justify-end">
+                  <button class="btn btn-primary text-devil-white w-full lg:w-auto">
+                    <a href="#contact" class="text-devil-white no-underline font-bold">Skorzystaj z naszych usług</a> 
+                  </button>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
       </section>
+
       <section class="min-h-screen">
         <div
          class="container"
