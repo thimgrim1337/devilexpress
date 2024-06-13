@@ -8,8 +8,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        lato: ['"Lato"', 'sans-serif'],
-        cities: ['"Cities"', 'sans-serif'],
+        poppins: ['"Poppins"', 'sans-serif'],
       },
       colors: {
         'devil-dark': '#001524',

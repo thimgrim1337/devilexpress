@@ -46,10 +46,6 @@ const carousel = document.querySelector('.carousel');
 
 collapseItems.forEach((collapseItem, index) =>
   collapseItem.addEventListener('click', () => {
-    const imgNumber = carousel.children.length - 1;
-
-    carousel.scrollTo({
-      top: (carousel.scrollTopMax / imgNumber) * index,
-    });
+    carousel.scrollTo(0, carousel.offsetHeight * index);
   })
 );
