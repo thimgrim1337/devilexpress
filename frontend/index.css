@@ -10,6 +10,86 @@
     src: url(/frontend/fonts/Cities_Typeface.ttf), format('ttf');
     src: url(/frontend/fonts/Cities_Typeface.otf), format('otf');
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Form */
+
+  fieldset:invalid > label,
+  textarea:invalid {
+    border: 4px solid #ed1c24;
+  }
+
+  fieldset:valid > label,
+  textarea:valid {
+    border: 4px solid green;
+  }
+}
+
+@layer components {
+  .list-style-check li::before {
+    content: '✔ ';
+    color: #ed1c24;
+    font-family: sans-serif;
+  }
+
+  /* CARD  */
+
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .card-rotate:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .card-back {
+    transform: rotateY(180deg);
+  }
+
+  /* SLIDER */
+
+  #slider-track {
+    animation: scroll 40s linear infinite;
+  }
+
+  #slider:before,
+  #slider:after {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    content: '';
+    z-index: 2;
+  }
+
+  #slider:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #f4f3ee);
+  }
+
+  #slider:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f4f3ee);
+  }
+
+  #slider-track:hover {
+    animation-play-state: paused;
+  }
 }
 
 @layer utilities {
@@ -22,66 +102,6 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-/* CARD  */
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.card-rotate:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.card-back {
-  transform: rotateY(180deg);
-}
-
-/* SLIDER */
-
-#slider-track {
-  animation: scroll 40s linear infinite;
-}
-
-#slider:before,
-#slider:after {
-  position: absolute;
-  top: 0;
-  width: 200px;
-  height: 100%;
-  content: '';
-  z-index: 2;
-}
-
-#slider:before {
-  left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #f4f3ee);
-}
-
-#slider:after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #f4f3ee);
-}
-
-#slider-track:hover {
-  animation-play-state: paused;
-}
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -89,18 +109,6 @@ html {
   100% {
     transform: translateX(calc(-208px * 7));
   }
-}
-
-/* Form */
-
-fieldset:invalid > label,
-textarea:invalid {
-  border: 4px solid #ed1c24;
-}
-
-fieldset:valid > label,
-textarea:valid {
-  border: 4px solid green;
 }
 
 /* Menu */
