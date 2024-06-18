@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "devil-express-1718638475411",
+  "private_key_id": "b02119106f92e283cfc69416bbad750411169a36",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCyNxfpnhCNGqKS\nQHPj/MTBE2L8dWwovauA1VSx2JvYn25i1ojbQrEASrLKFTvjVljXC0nDxbcaYGPE\nxHDVSjHs1GsvWK2YPEXlTtBwsL/IVgvQ5lx+IKWsIX9BUEZqw522ng7jUWvd+XEe\nVNuEPPbdoyXl7h46g989rVxXrQN4vaJezxzz3Wjy/8k8vhEL2veXr+S9jBI13t3E\nv94aC5s9qpG04XhS7xDwChDdXmL9WmNHSelXTDjBwOmPcyJsGmeZNAbIGPhdnlkt\noBOVz1rZQhQQd0Bpg2u92AiwTMKjPFqvLBQ7QAw3U/6+gwavkv62PSrsKsX+VDNz\nBMZWgS4jAgMBAAECggEAAO8zLqRgI1zijHmVb0JKGJj2E9Sbl2deX+E/cO5QLp6/\n7NHz0wQCbfL8OFPVqlcnw4SgRYNWAo8T4O0Ercg/qFDH9zz9t8O7CupYmeclbNoz\nQXWeMnNPE6zEk+u5xZ6+fjnjcgR688kR+zqFuuqllnRf6vo+mw1F12dN6EcgZdk3\nHlE4R92JUFshoseYdhHAM3tgNuPqVFbqazNdWVBCN8fcJxoCMytZa8U7/fpZbS5Y\nFAi/jWHeHWIrWRQMixfVX7cpJIS71NjKZp3K+aitWLsvCOJnpFX1Z9E1PJCfvWfh\nWKG3xvTGVR0mSDJe6wDg7KrArRZAXedWcw3jA3g5bQKBgQDazWmi9bY4fXNAhGV5\nGaIN8r2oaYTjjPzhO3vUhxmKoTkeJ+IToDvS4vEAKZEGxaEAhINgjgy1HpV8aSJZ\nAyHI5R3pSMhK+OMlVvOIlCtKN7az1uEGpFVJ0ZiV3DG8dvtFzN18uDCNTul3v/GW\ngZMMQcG+4sUovNraz3n1ekIT1wKBgQDQg0T+lfSoLMbdbxL+cvp9PvNpygfvfcqy\nrH1bVoAXVTv3n2ZxMOPHs6zio3ds+EZZJKdJjMm2+90YDdQ/GxSkA5iVwX9mU2mt\nYJijvMcbL+jc97mPlFzd9wYL4/m9iFqzYmHpCcgYbCEAR8b6ZD2tpIxZGbuY40T8\n7Nr+hf0ulQKBgQCRNnjgbWCVVzTxYa0S1R9HUI3swrMubji6psbFQzCBYATPbbrO\nOa7ahEFcUTnuG6WB+XBT2ZK3defSHNht6PU4Jk9WrzY3A72E35NbVrLwW8+GxZqs\n1M3B4zf4ZZ4grXqQVam9h2S5s+Cg2CPXNoHIRa/3Jvug0M4TIFWZxJ0sGwKBgHop\n/rleKDqECXthAXLc8I+C22BGwwF45NJsJwHlmySQhpLc7EszBrFRPuCGP4kzqRu/\nUtfPybsQs4fNSmYyupQhmztaZAcSpd6zspp0Fv+BwV/9L9XEaeiOOxeqWP7HrcRd\nxtmfJoHQkEE2zIiVRGHA/42Qew3nUdsR9nibDixFAoGBANHdPrE47p6MaQeVF5Hc\nq+g+Hqsp/JYCEg+wxoIfU9tx/Zj/r+0Gq4cXtUfJ1RoCv8RdzNB0ljyhI8dAm3OI\nugdKs2CLbpWLOegOJVEkUDukqZdwR8wdgaSSShi5a2Y/g3N1ZwfBPQUb/RrZdrdE\nj6I3ld8eypuGmvC1CDwioRSB\n-----END PRIVATE KEY-----\n",
+  "client_email": "recaptcha@devil-express-1718638475411.iam.gserviceaccount.com",
+  "client_id": "101939445686845881075",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/recaptcha%40devil-express-1718638475411.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

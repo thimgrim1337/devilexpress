@@ -49,3 +49,17 @@ collapseItems.forEach((collapseItem, index) =>
     carousel.scrollTo(0, carousel.offsetHeight * index);
   })
 );
+
+// Form
+// const dialog = document.querySelector('dialog');
+// const submitBtn = document.querySelector('form button[type="submit"');
+// const closeButton = document.querySelector('dialog button');
+
+// submitBtn.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   dialog.showModal();
+// });
+
+// closeButton.addEventListener('click', () => {
+//   dialog.close();
+// });

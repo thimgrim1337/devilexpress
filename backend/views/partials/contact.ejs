@@ -1,0 +1,102 @@
+<section class="hero bg-map-bg bg-cover" id="contact">
+  <div class="hero-overlay bg-opacity-50"></div>
+  <div
+    class="container min-h-screen max-w-screen-xl place-content-center py-20 md:px-2"
+  >
+    <div class="max-w-xl text-base-100 mb-5">
+      <p
+        class="md:text-xl before:block before:w-7 before:h-2 before:bg-devil-red"
+      >
+        Skontakuj się z nami
+      </p>
+      <h2 class="mb-2 text-2xl md:text-3xl font-bold">
+        Potrzebujesz wyceny
+        <span class="text-primary text-4xl">?</span> Chętnie zajmiemy się Twoją
+        sprawą. Nasi specjaliści odpowiedzą na Twoje pytania i pomogą Ci wybrać
+        najlepsze rozwiązanie dla Twoich potrzeb.
+      </h2>
+    </div>
+    <div class="flex flex-col md:flex-row">
+      <div class="flex-grow">
+        <form action="/send" method="post" class="grid gap-2">
+          <fieldset>
+            <label class="input input-bordered flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-4 h-4 opacity-70"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z"
+                />
+              </svg>
+              <input
+                type="text"
+                class="grow"
+                placeholder="Imię"
+                required
+                autocomplete="false"
+                id="name"
+              />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label class="input input-bordered flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-4 h-4 opacity-70"
+              >
+                <path
+                  d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z"
+                />
+                <path
+                  d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z"
+                />
+              </svg>
+              <input
+                type="email"
+                class="grow"
+                placeholder="Email"
+                required
+                autocomplete="false"
+                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                id="email"
+              />
+            </label>
+          </fieldset>
+          <textarea
+            class="textarea textarea-bordered resize-none w-full h-52"
+            placeholder="Twoja wiadomość..."
+            required
+            autocomplete="false"
+            id="message"
+          ></textarea>
+          <button
+            data-sitekey="6LekyvopAAAAAKOGJAnEgH2KyGYdAzKPMJyLFwF9"
+            data-callback="onSubmit"
+            data-action="submit"
+            type="submit"
+            class="g-recaptcha btn w-full btn-primary uppercase text-xl text-base-100"
+          >
+            wyślij
+          </button>
+        </form>
+      </div>
+      <div
+        class="text-base-100 flex-grow grid content-start place-content-center p-10"
+        data-aos="zoom-in"
+      >
+        <img src="logo.png" alt="" class="mb-2 w-40" />
+        <h4 class="font-bold text-lg">DEVIL Express Sp. z o.o.</h4>
+        <p>09-442 Stróżewko 2/1</p>
+        <p>NIP: 7743286397</p>
+        <p>KRS: 0001094441</p>
+        <p>+48 733 533 971</p>
+        <p>biuro@devilexpress.eu</p>
+      </div>
+    </div>
+  </div>
+</section>
