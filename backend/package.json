@@ -1,28 +1,23 @@
 {
   "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "nodemon": "nodemon --env-file=.env app.js",
-    "run": "node --env-file=.env app.js"
+    "start": "node ./bin/www",
+    "devstart": "nodemon --env-file=.env ./bin/www",
+    "serverstart": "DEBUG=locallibrary:* npm start"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@google-cloud/recaptcha-enterprise": "^5.9.0",
-    "@google-cloud/storage": "^7.11.2",
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "express-validator": "^7.1.0",
-    "nodemailer": "^6.9.13"
+    "http-errors": "~2.0.0",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.3"
   }
 }

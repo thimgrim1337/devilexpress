@@ -8,7 +8,7 @@ import { RecaptchaEnterpriseServiceClient } from '@google-cloud/recaptcha-enterp
  * token: Wygenerowany token uzyskany od klienta.
  * recaptchaAction: Nazwa działania odpowiadająca tokenowi.
  */
-export default async function createAssessment({
+async function createAssessment({
   // DO ZROBIENIA: zastąp token i zmienne działania reCAPTCHA przed uruchomieniem przykładu.
   projectID = 'devil-express-1718638475411',
   recaptchaKey = '6LekyvopAAAAAKOGJAnEgH2KyGYdAzKPMJyLFwF9',
@@ -61,3 +61,5 @@ export default async function createAssessment({
     return null;
   }
 }
+
+export default createAssessment;
