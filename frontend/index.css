@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: 'Cities';
-    font-style: normal;
-    font-display: swap;
-    src: url(/frontend/fonts/Cities_Typeface.ttf), format('ttf');
-    src: url(/frontend/fonts/Cities_Typeface.otf), format('otf');
-  }
-
   html {
     scroll-behavior: smooth;
   }

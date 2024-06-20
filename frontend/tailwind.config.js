@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', 'pages/oferta.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './index.html',
+    'pages/oferta.html',
+    'pages/404.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     container: {
       center: true,
