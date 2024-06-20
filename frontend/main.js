@@ -51,15 +51,16 @@ collapseItems.forEach((collapseItem, index) =>
 );
 
 // Form
-// const dialog = document.querySelector('dialog');
-// const submitBtn = document.querySelector('form button[type="submit"');
-// const closeButton = document.querySelector('dialog button');
+const dialog = document.querySelector('dialog');
+const submitBtn = document.querySelector('form button[type="submit"]');
+const closeButton = document.querySelector('dialog button');
 
-// submitBtn.addEventListener('click', (e) => {
-//   e.preventDefault();
-//   dialog.showModal();
-// });
+submitBtn.addEventListener('click', () => {
+  dialog.showModal();
+  document.body.style.overflow = 'hidden';
+});
 
-// closeButton.addEventListener('click', () => {
-//   dialog.close();
-// });
+closeButton.addEventListener('click', () => {
+  dialog.close();
+  document.body.style.overflow = 'auto';
+});

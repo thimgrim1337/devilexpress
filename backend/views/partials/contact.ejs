@@ -10,15 +10,18 @@
         Skontakuj się z nami
       </p>
       <h2 class="mb-2 text-2xl md:text-3xl font-bold">
-        Potrzebujesz wyceny
-        <span class="text-primary text-4xl">?</span> Chętnie zajmiemy się Twoją
-        sprawą. Nasi specjaliści odpowiedzą na Twoje pytania i pomogą Ci wybrać
-        najlepsze rozwiązanie dla Twoich potrzeb.
+        Potrzebujesz wyceny <span class="text-primary text-4xl">?</span> Chętnie
+        zajmiemy się Twoją sprawą. Nasi specjaliści odpowiedzą na Twoje pytania
+        i pomogą Ci wybrać najlepsze rozwiązanie dla Twoich potrzeb.
       </h2>
     </div>
     <div class="flex flex-col md:flex-row">
       <div class="flex-grow">
-        <form action="/send" method="post" class="grid gap-2">
+        <form
+          action="http://localhost:3000/send"
+          method="post"
+          class="grid gap-2"
+        >
           <fieldset>
             <label class="input input-bordered flex items-center gap-2">
               <svg
@@ -37,6 +40,7 @@
                 placeholder="Imię"
                 required
                 autocomplete="false"
+                id="name"
                 name="name"
               />
             </label>
@@ -62,7 +66,7 @@
                 placeholder="Email"
                 required
                 autocomplete="false"
-                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                id="email"
                 name="email"
               />
             </label>
@@ -72,6 +76,7 @@
             placeholder="Twoja wiadomość..."
             required
             autocomplete="false"
+            id="message"
             name="message"
           ></textarea>
           <button

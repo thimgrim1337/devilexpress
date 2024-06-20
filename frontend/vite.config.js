@@ -10,6 +10,7 @@ export default defineConfig({
         ofert: resolve(__dirname, 'pages/oferta.html'),
         about: resolve(__dirname, 'pages/firma.html'),
         contact: resolve(__dirname, 'pages/kontakt.html'),
+        error: resolve(__dirname, 'pages/404.html'),
       },
     },
   },
