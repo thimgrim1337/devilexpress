@@ -1,8 +1,6 @@
 import express from 'express';
 import router from './routes/router.js';
 import bodyParser from 'body-parser';
-// const { check, validationResult } = require('express-validator');
-// const nodemailer = require('nodemailer');
 import cors from 'cors';
 import ejs from 'ejs';
 

@@ -23,6 +23,9 @@
           class="grid gap-2"
         >
           <fieldset>
+            <% if(errors && errors.name) { %>
+            <span class="text-devil-red font-bold"><%= errors.name.msg %></span>
+            <% } %>
             <label class="input input-bordered flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,6 +49,11 @@
             </label>
           </fieldset>
           <fieldset>
+            <% if(errors && errors.email) { %>
+            <span class="text-devil-red font-bold"
+              ><%= errors.email.msg %></span
+            >
+            <% } %>
             <label class="input input-bordered flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,6 +79,11 @@
               />
             </label>
           </fieldset>
+          <% if(errors && errors.message) { %>
+          <span class="text-devil-red font-bold"
+            ><%= errors.message.msg %></span
+          >
+          <% } %>
           <textarea
             class="textarea textarea-bordered resize-none w-full h-52"
             placeholder="Twoja wiadomość..."
@@ -104,4 +117,5 @@
       </div>
     </div>
   </div>
+  <% if(modalOpen) { %> <%- include('./dialog.ejs') %> <% } %>
 </section>
