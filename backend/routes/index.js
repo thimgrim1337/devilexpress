@@ -7,7 +7,7 @@ import {
   about,
   contact,
 } from '../controllers/indexController.js';
-import { handleForm, sendEmail } from '../controllers/formController.js';
+import { handleForm } from '../controllers/formController.js';
 const router = Router();
 
 router.get('/', index);
@@ -21,7 +21,7 @@ router.post(
     check('email').isEmail().withMessage('* Adres mailowy jest wymagany.'),
     check('message').notEmpty().withMessage('* Treść wiadomości jest wymagana'),
   ],
-  sendEmail
+  handleForm
 );
 
 export default router;

@@ -1,19 +1,26 @@
-import createAssessment from '../createAssessment.js';
+import createAssessment from '../utils/createAssessment.js';
 import { validationResult } from 'express-validator';
 import nodemailer from 'nodemailer';
 
 export const handleForm = async (req, res) => {
-  const data = await createAssessment({
+  const score = await createAssessment({
     token: req.body['g-recaptcha-response'],
     recaptchaAction: 'submit',
   });
 
-  if (data > 0.7) {
+  if (!score || score < 0.7) {
+    return res.render('pages/kontakt', {
+      errors: '',
+      modalOpen: true,
+      modalTitle: 'Błąd wysyłania wiadomości.',
+      modalMessage: `W wyniku błędu Twoja wiadomość nie została wysłana. Spróbuj ponownie. `,
+    });
   }
-  // res.redirect('/');
+
+  sendEmail(req, res);
 };
 
-export const sendEmail = (req, res) => {
+const sendEmail = (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     res.render('pages/kontakt', {
@@ -39,9 +46,14 @@ export const sendEmail = (req, res) => {
     };
 
     transporter.sendMail(mail_option, (error, info) => {
-      if (error) console.log(error);
+      if (error) console.error(error);
       else {
-        res.render('pages/kontakt', { errors: '', modalOpen: true });
+        res.render('pages/kontakt', {
+          errors: '',
+          modalOpen: true,
+          modalTitle: 'Dziękujęmy za kontakt.',
+          modalMessage: 'Wiadomość została wysłana. Odpowiemy w ciągu 24h',
+        });
       }
     });
   }
