@@ -2,22 +2,25 @@ import createAssessment from '../utils/createAssessment.js';
 import { validationResult } from 'express-validator';
 import nodemailer from 'nodemailer';
 
-export const handleForm = async (req, res) => {
-  const score = await createAssessment({
-    token: req.body['g-recaptcha-response'],
-    recaptchaAction: 'submit',
-  });
-
-  if (!score || score < 0.7) {
-    return res.render('pages/kontakt', {
-      errors: '',
-      modalOpen: true,
-      modalTitle: 'Błąd wysyłania wiadomości.',
-      modalMessage: `W wyniku błędu Twoja wiadomość nie została wysłana. Spróbuj ponownie. `,
+export const handleForm = async (req, res, next) => {
+  try {
+    const score = await createAssessment({
+      token: req.body['g-recaptcha-response'],
+      recaptchaAction: 'submit',
     });
-  }
+    if (!score || score < 0.7) {
+      res.status(400).render('pages/kontakt', {
+        errors: '',
+        modalOpen: true,
+        modalTitle: 'Błąd wysyłania wiadomości.',
+        modalMessage: `W wyniku błędu Twoja wiadomość nie została wysłana. Spróbuj ponownie.`,
+      });
+    }
 
-  sendEmail(req, res);
+    sendEmail(req, res);
+  } catch (e) {
+    next(e);
+  }
 };
 
 const sendEmail = (req, res) => {
@@ -46,7 +49,7 @@ const sendEmail = (req, res) => {
     };
 
     transporter.sendMail(mail_option, (error, info) => {
-      if (error) console.error(error);
+      if (error) console.log(error);
       else {
         res.render('pages/kontakt', {
           errors: '',
