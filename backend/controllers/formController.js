@@ -1,6 +1,7 @@
 import createAssessment from '../utils/createAssessment.js';
 import { validationResult } from 'express-validator';
 import nodemailer from 'nodemailer';
+import debug from 'debug';
 
 export const handleForm = async (req, res, next) => {
   try {
@@ -49,7 +50,7 @@ const sendEmail = (req, res) => {
     };
 
     transporter.sendMail(mail_option, (error, info) => {
-      if (error) console.log(error);
+      if (error) debug(error);
       else {
         res.render('pages/kontakt', {
           errors: '',

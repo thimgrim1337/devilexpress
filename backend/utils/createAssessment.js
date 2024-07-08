@@ -1,4 +1,5 @@
 import { RecaptchaEnterpriseServiceClient } from '@google-cloud/recaptcha-enterprise';
+import debug from 'debug';
 
 /**
  * Utwórz ocenę, aby przeanalizować ryzyko związane z działaniem w interfejsie użytkownika.
@@ -36,7 +37,7 @@ async function createAssessment({
 
   // Sprawdź, czy token jest prawidłowy.
   if (!response.tokenProperties.valid) {
-    console.log(
+    debug(
       `The CreateAssessment call failed because the token was: ${response.tokenProperties.invalidReason}`
     );
     return null;
@@ -48,14 +49,14 @@ async function createAssessment({
     // Uzyskaj ocenę ryzyka i jego przyczyny.
     // Więcej informacji o interpretowaniu testu znajdziesz tutaj:
     // https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment
-    console.log(`The reCAPTCHA score is: ${response.riskAnalysis.score}`);
+    debug(`The reCAPTCHA score is: ${response.riskAnalysis.score}`);
     response.riskAnalysis.reasons.forEach((reason) => {
-      console.log(reason);
+      debug(reason);
     });
 
     return response.riskAnalysis.score;
   } else {
-    console.log(
+    debug(
       'The action attribute in your reCAPTCHA tag does not match the action you are expecting to score'
     );
     return null;
