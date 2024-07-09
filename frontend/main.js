@@ -18,18 +18,19 @@ const orderCounter = document.querySelector('.orderCounter');
 const kmCounter = document.querySelector('.kmCounter');
 let counterStart = false;
 
-let observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting && !counterStart) {
-      counterStart = !counterStart;
-      animateCounter(clientCounter, 0, 520, 2000);
-      animateCounter(orderCounter, 0, 28, 2000);
-      animateCounter(kmCounter, 0, 16, 2000);
-    }
+if (clientCounter && orderCounter && kmCounter) {
+  let observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && !counterStart) {
+        counterStart = !counterStart;
+        animateCounter(clientCounter, 0, 520, 2000);
+        animateCounter(orderCounter, 0, 28, 2000);
+        animateCounter(kmCounter, 0, 16, 2000);
+      }
+    });
   });
-});
-
-observer.observe(kmCounter);
+  observer.observe(kmCounter);
+}
 
 // Hamburger menu
 const hambuger = document.querySelector('#hamburger');
@@ -49,18 +50,3 @@ collapseItems.forEach((collapseItem, index) =>
     carousel.scrollTo(0, carousel.offsetHeight * index);
   })
 );
-
-// // Form
-// const dialog = document.querySelector('dialog');
-// const submitBtn = document.querySelector('form button[type="submit"]');
-// const closeButton = document.querySelector('dialog button');
-
-// submitBtn.addEventListener('click', () => {
-//   dialog.showModal();
-//   document.body.style.overflow = 'hidden';
-// });
-
-// closeButton.addEventListener('click', () => {
-//   dialog.close();
-//   document.body.style.overflow = 'auto';
-// });
